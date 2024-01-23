@@ -36,13 +36,13 @@
       </header>
 
       <center>
-      <audio controls autoplay type="audio/mpeg" src="https://stream-42.zeno.fm/ofzvo0nhnnqvv"></audio>
+      <audio controls="" autostart="0" type="audio/mpeg" src="https://stream-42.zeno.fm/ofzvo0nhnnqvv"></audio>
         <br />klik untuk mendengarkan siaran radio
       </center>
       <main role="main" class="inner cover">
         <h1 class="cover-heading">Welcome to Our Website</h1>
         <p class="lead">First LED Lighting Online Community & Marketplace in Indonesia</p>
-			<button id="btn btn-lg btn-secondary">Request Music</button>
+			<button class="btn btn-lg btn-secondary">Request Music</button>
 			<div id="secondDiv" style="display:none;">
 			<div id="disqus_thread"></div>
 			<script>
@@ -67,8 +67,8 @@
 
 
 			<script>
-				document.getElementById("btn btn-lg btn-secondary").onclick = function() {
-					var secondDiv = document.getElementById("secondDiv");
+				document.getElementsByClassName("btn btn-lg btn-secondary").onclick = function() {
+					var secondDiv = document.getElementsByClassName("secondDiv");
 					if (secondDiv.style.display === "none") {
 						secondDiv.style.display = "block";
 					} else {
